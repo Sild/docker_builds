@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t "sild/webserver:apache2-php7" .
+docker build -t "sildtm/nginx_proxy" .

@@ -1,9 +1,9 @@
-### Webserver with apache2 and php7
+### Nginx as a proxy server
 
 * build:
 
 ```
-docker build -t "sild/webserver:apache2-php7" .
+docker build -t "sildtm/nginx_proxy" .
 ```
 
 or
@@ -15,5 +15,5 @@ or
 * run:
 
 ```
-docker run -d -v /path/to/project:/var/www/html --name="CONTAINER_HOST_project" sild/webserver:apache2-php7
+docker run -d --name nginx_proxy --net=host -v /var/log/nginx:/var/log/nginx sildtm/nginx_proxy 
 ```
