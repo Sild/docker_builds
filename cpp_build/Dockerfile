@@ -9,4 +9,4 @@ RUN \
     unzip boost_1_63_0.zip && \
     cd boost_1_63_0/ && \
     ./bootstrap.sh && ./b2 install && \
-    rm -rf boost_1_63_0*
+    cd .. && rm -rf boost_1_63_0*
