@@ -8,4 +8,5 @@ RUN \
     wget https://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.zip/download -O boost_1_63_0.zip && \
     unzip boost_1_63_0.zip && \
     cd boost_1_63_0/ && \
-    ./bootstrap.sh && ./b2 install
+    ./bootstrap.sh && ./b2 install && \
+    rm -rf boost_1_63_0*
